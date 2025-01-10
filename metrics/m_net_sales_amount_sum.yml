@@ -1,0 +1,6 @@
+unique_name: m_net_sales_amount_sum
+object_type: metric
+label: Net Sales Amount
+calculation_method: sum
+dataset: atscale_hrlw_invoice_ln_f
+column: net_sales_amount

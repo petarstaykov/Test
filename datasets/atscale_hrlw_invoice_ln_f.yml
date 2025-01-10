@@ -1,0 +1,435 @@
+unique_name: atscale_hrlw_invoice_ln_f
+object_type: dataset
+label: atscale_hrlw_invoice_ln_f
+connection_id: Postgres14
+table: atscale_hrlw_invoice_ln_f
+
+columns:
+  - name: acquisition_flag
+    data_type: string
+  - name: action_code
+    data_type: string
+  - name: adjusted_gross_sales_amount
+    data_type: double
+  - name: amount_includes_tax_flag
+    data_type: string
+  - name: ar_terms_discount_days
+    data_type: double
+  - name: ar_terms_edi_percent
+    data_type: double
+  - name: ar_terms_id
+    data_type: double
+  - name: ar_terms_name
+    data_type: string
+  - name: ar_terms_net_days
+    data_type: double
+  - name: ar_terms_wid
+    data_type: double
+  - name: billto_key
+    data_type: string
+  - name: billto_source_id
+    data_type: string
+  - name: billto_wid
+    data_type: double
+  - name: business_unit_source_id
+    data_type: double
+  - name: business_unit_wid
+    data_type: double
+  - name: calculated_trx_type
+    data_type: string
+  - name: cash_discount_amount
+    data_type: double
+  - name: claims_amount
+    data_type: double
+  - name: claims_hdr_amount
+    data_type: double
+  - name: clm_cause_code
+    data_type: string
+  - name: clm_claim_code
+    data_type: string
+  - name: clm_claim_id
+    data_type: string
+  - name: clm_claim_type
+    data_type: string
+  - name: clm_cm_trx_number
+    data_type: string
+  - name: clm_deduction_type
+    data_type: string
+  - name: clm_gl_acct
+    data_type: string
+  - name: clm_gl_comp
+    data_type: string
+  - name: clm_gl_dept
+    data_type: string
+  - name: clm_gl_div
+    data_type: string
+  - name: clm_gl_loc
+    data_type: string
+  - name: clm_gl_loss_acct
+    data_type: string
+  - name: clm_gl_loss_comp
+    data_type: string
+  - name: clm_gl_loss_dept
+    data_type: string
+  - name: clm_gl_loss_div
+    data_type: string
+  - name: clm_gl_loss_loc
+    data_type: string
+  - name: clm_gl_loss_reserved
+    data_type: string
+  - name: clm_gl_reserved
+    data_type: string
+  - name: clm_header_reason_code
+    data_type: string
+  - name: clm_invoice_number
+    data_type: string
+  - name: clm_item_comment
+    data_type: string
+  - name: clm_item_handling_code
+    data_type: string
+  - name: clm_item_loss_amount
+    data_type: double
+  - name: clm_ld_flg
+    data_type: string
+  - name: clm_ora_claim_export_id
+    data_type: double
+  - name: clm_outlet_number
+    data_type: string
+  - name: clm_process_date
+    data_type: datetime
+  - name: clm_rec_id
+    data_type: string
+  - name: clm_reference_number
+    data_type: string
+  - name: clm_resolution_date
+    data_type: datetime
+  - name: clm_resolution_lvl
+    data_type: string
+  - name: clm_resolution_type
+    data_type: string
+  - name: clm_resp_code
+    data_type: string
+  - name: cogs_currency_code
+    data_type: string
+  - name: cogs_exchange_rate_usd
+    data_type: double
+  - name: cogs_gl_string
+    data_type: string
+  - name: cogs_gl_wid
+    data_type: double
+  - name: created_by
+    data_type: string
+  - name: creation_date
+    data_type: datetime
+  - name: currency_code
+    data_type: string
+  - name: customer_division
+    data_type: string
+  - name: customer_division_wid
+    data_type: double
+  - name: customer_trx_id
+    data_type: double
+  - name: customer_trx_line_id
+    data_type: double
+  - name: datasource_desc
+    data_type: string
+  - name: datasource_id
+    data_type: double
+  - name: divestiture_flag
+    data_type: string
+  - name: dlvrto_key
+    data_type: string
+  - name: dlvrto_source_id
+    data_type: string
+  - name: exchange_rate_usd
+    data_type: double
+  - name: freight_allocation_amount
+    data_type: double
+  - name: freight_delivery_amount
+    data_type: double
+  - name: freight_hfic_corp_alloc_amount
+    data_type: double
+  - name: freight_ocean_air_amount
+    data_type: double
+  - name: freight_rail_amount
+    data_type: double
+  - name: freight_transfer_amount
+    data_type: double
+  - name: freight_truck_amount
+    data_type: double
+  - name: gl_date
+    data_type: datetime
+  - name: gl_posted_date
+    data_type: datetime
+  - name: gl_string
+    data_type: string
+  - name: gl_wid
+    data_type: double
+  - name: gross_profit_amount
+    data_type: double
+  - name: gross_profit_wofw_amount
+    data_type: double
+  - name: gross_sales_amount
+    data_type: double
+  - name: gross_weight_per_case
+    data_type: double
+  - name: hash_key
+    data_type: string
+  - name: ingest_date
+    data_type: date
+  - name: integration_id
+    data_type: string
+  - name: intercompany_flag
+    data_type: string
+  - name: inventory_item_id
+    data_type: double
+  - name: invoice_date
+    data_type: datetime
+  - name: invoice_header_integration_id
+    data_type: string
+  - name: invoice_header_wid
+    data_type: double
+  - name: invoice_interface_trx_type
+    data_type: string
+  - name: invoice_line_cogs_amount
+    data_type: double
+  - name: invoice_line_description
+    data_type: string
+  - name: invoice_line_jv_cogs_amount
+    data_type: double
+  - name: invoice_line_quantity_invoiced
+    data_type: double
+  - name: invoice_line_quantity_ordered
+    data_type: double
+  - name: invoice_line_sales_amount
+    data_type: double
+  - name: invoice_line_total_freight_amount
+    data_type: double
+  - name: invoice_line_total_whse_amount
+    data_type: double
+  - name: invoice_line_wid
+    data_type: double
+  - name: item_number
+    data_type: string
+  - name: jv_cogs_amount
+    data_type: double
+  - name: last_update_date
+    data_type: datetime
+  - name: last_updated_by
+    data_type: string
+  - name: lgcy_billto_id
+    data_type: string
+  - name: lgcy_entry_userid
+    data_type: string
+  - name: lgcy_invoice_sequence
+    data_type: string
+  - name: lgcy_invoice_type
+    data_type: string
+  - name: lgcy_location_code
+    data_type: string
+  - name: lgcy_margin
+    data_type: double
+  - name: lgcy_refer_to_item
+    data_type: double
+  - name: lgcy_shipto_id
+    data_type: string
+  - name: load_day
+    data_type: int
+  - name: load_month
+    data_type: int
+  - name: load_year
+    data_type: int
+  - name: misc_allowance_amount
+    data_type: double
+  - name: net_sales_amount
+    data_type: double
+  - name: non_trade_description
+    data_type: string
+  - name: off_invoice_adj_amount
+    data_type: double
+  - name: off_invoice_adj_true_up_amount
+    data_type: double
+  - name: order_charge_comp_explanation
+    data_type: string
+  - name: order_charge_comp_id
+    data_type: string
+  - name: order_charge_comp_price_element_code
+    data_type: string
+  - name: order_fulfill_line_id
+    data_type: double
+  - name: order_fulfill_line_integration_id
+    data_type: string
+  - name: order_header_integration_id
+    data_type: string
+  - name: order_header_wid
+    data_type: double
+  - name: order_line_integration_id
+    data_type: string
+  - name: order_number
+    data_type: string
+  - name: ordered_date
+    data_type: datetime
+  - name: org_code
+    data_type: string
+  - name: org_source_id
+    data_type: string
+  - name: org_wid
+    data_type: double
+  - name: product_wid
+    data_type: double
+  - name: qty_to_cases_conv_rate
+    data_type: double
+  - name: qty_to_cases_conv_rate_ord
+    data_type: double
+  - name: qty_to_lbs_conv_rate
+    data_type: double
+  - name: qty_to_lbs_conv_rate_ord
+    data_type: double
+  - name: qty_to_pallets_conv_rate
+    data_type: double
+  - name: qty_to_pallets_conv_rate_ord
+    data_type: double
+  - name: qty_to_units_conv_rate
+    data_type: double
+  - name: qty_to_units_conv_rate_ord
+    data_type: double
+  - name: quantity_claims
+    data_type: double
+  - name: quantity_claims_hdr
+    data_type: double
+  - name: quantity_credited
+    data_type: double
+  - name: quantity_invoiced
+    data_type: double
+  - name: quantity_invoiced_pricing
+    data_type: double
+  - name: quantity_ordered
+    data_type: double
+  - name: rctl_created_by
+    data_type: string
+  - name: rctl_created_dttm
+    data_type: datetime
+  - name: rctl_file_path
+    data_type: string
+  - name: rctl_modified_by
+    data_type: string
+  - name: rctl_modified_dttm
+    data_type: datetime
+  - name: reason_code
+    data_type: string
+  - name: reason_code_attribute
+    data_type: string
+  - name: reason_code_category
+    data_type: string
+  - name: recognized_cogs_amount
+    data_type: double
+  - name: refer_to_invoice_header_wid
+    data_type: double
+  - name: refer_to_item_number
+    data_type: string
+  - name: refer_to_product_wid
+    data_type: double
+  - name: sales_amount
+    data_type: double
+  - name: sales_order
+    data_type: string
+  - name: ship_date
+    data_type: datetime
+  - name: shipping_order_key
+    data_type: string
+  - name: short_pay
+    data_type: string
+  - name: source_extracted_date
+    data_type: date
+  - name: source_extracted_ts
+    data_type: datetime
+  - name: status_code
+    data_type: string
+  - name: subsidize_from_gov_cogs_amount
+    data_type: double
+  - name: tax_exempt_flag
+    data_type: string
+  - name: territory_key
+    data_type: string
+  - name: territory_wid
+    data_type: double
+  - name: total_freight_amount
+    data_type: double
+  - name: total_freight_and_whse_amount
+    data_type: double
+  - name: total_trade_amount
+    data_type: double
+  - name: total_whse_amount
+    data_type: double
+  - name: trade_bas_amount
+    data_type: double
+  - name: trade_bdf_amount
+    data_type: double
+  - name: trade_com_amount
+    data_type: double
+  - name: trade_cou_amount
+    data_type: double
+  - name: trade_int_amount
+    data_type: double
+  - name: trade_jv_flag
+    data_type: string
+  - name: trade_lumpsum_adj_flag
+    data_type: string
+  - name: trade_oth_amount
+    data_type: double
+  - name: trade_scf_amount
+    data_type: double
+  - name: trade_sup_amount
+    data_type: double
+  - name: transaction_date
+    data_type: datetime
+  - name: trx_class
+    data_type: string
+  - name: trx_line_number
+    data_type: double
+  - name: trx_number
+    data_type: string
+  - name: trx_source
+    data_type: string
+  - name: trx_source_desc
+    data_type: string
+  - name: trx_type
+    data_type: string
+  - name: trx_type_description
+    data_type: string
+  - name: trx_type_id
+    data_type: double
+  - name: trx_type_name
+    data_type: string
+  - name: trx_type_seq_id
+    data_type: double
+  - name: trx_type_wid
+    data_type: double
+  - name: unit_selling_price
+    data_type: double
+  - name: unit_standard_price
+    data_type: double
+  - name: unrecognized_cogs_amount
+    data_type: double
+  - name: uom_code
+    data_type: string
+  - name: w_insert_dt
+    data_type: datetime
+  - name: w_update_dt
+    data_type: datetime
+  - name: whse_freezer_allocation_amount
+    data_type: double
+  - name: whse_pallet_allocation_amount
+    data_type: double
+  - name: whse_pallets_amount
+    data_type: double
+  - name: whse_plant_warehousing_amount
+    data_type: double
+  - name: whse_scheduling_allocation_amount
+    data_type: double
+  - name: whse_storage_amount
+    data_type: double
+  - name: whse_warehouse_service_amount
+    data_type: double
+  - name: whse_warehousing_transfer_freight_amount
+    data_type: double

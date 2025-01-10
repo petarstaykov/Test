@@ -1,0 +1,121 @@
+unique_name: atscale_hrlm_segment_product_sku_ver_dh_current
+object_type: dataset
+label: atscale_hrlm_segment_product_sku_ver_dh_current
+connection_id: Postgres14
+table: atscale_hrlm_segment_product_sku_ver_dh_current
+
+columns:
+  - name: end_date
+    data_type: datetime
+  - name: hmrw_key_wid
+    data_type: double
+  - name: hrlw_key_wid
+    data_type: double
+  - name: ingest_date
+    data_type: date
+  - name: load_day
+    data_type: int
+  - name: load_month
+    data_type: int
+  - name: load_year
+    data_type: int
+  - name: lvl_3_desc
+    data_type: string
+  - name: lvl_3_key
+    data_type: string
+  - name: lvl_3_type
+    data_type: string
+  - name: lvl_4_desc
+    data_type: string
+  - name: lvl_4_key
+    data_type: string
+  - name: lvl_4_type
+    data_type: string
+  - name: lvl_5_desc
+    data_type: string
+  - name: lvl_5_key
+    data_type: string
+  - name: lvl_5_type
+    data_type: string
+  - name: lvl_6_desc
+    data_type: string
+  - name: lvl_6_key
+    data_type: string
+  - name: lvl_6_type
+    data_type: string
+  - name: lvl_7_desc
+    data_type: string
+  - name: lvl_7_key
+    data_type: string
+  - name: lvl_7_type
+    data_type: string
+  - name: lvl_8_desc
+    data_type: string
+  - name: lvl_8_key
+    data_type: string
+  - name: lvl_8_type
+    data_type: string
+  - name: next_lvl_3_desc
+    data_type: string
+  - name: next_lvl_3_key
+    data_type: string
+  - name: next_lvl_3_type
+    data_type: string
+  - name: next_lvl_4_desc
+    data_type: string
+  - name: next_lvl_4_key
+    data_type: string
+  - name: next_lvl_4_type
+    data_type: string
+  - name: next_lvl_5_desc
+    data_type: string
+  - name: next_lvl_5_key
+    data_type: string
+  - name: next_lvl_5_type
+    data_type: string
+  - name: next_lvl_6_desc
+    data_type: string
+  - name: next_lvl_6_key
+    data_type: string
+  - name: next_lvl_6_type
+    data_type: string
+  - name: next_lvl_7_desc
+    data_type: string
+  - name: next_lvl_7_key
+    data_type: string
+  - name: next_lvl_7_type
+    data_type: string
+  - name: next_lvl_8_desc
+    data_type: string
+  - name: next_lvl_8_key
+    data_type: string
+  - name: next_lvl_8_type
+    data_type: string
+  - name: rctl_created_by
+    data_type: string
+  - name: rctl_created_dttm
+    data_type: datetime
+  - name: rctl_file_path
+    data_type: string
+  - name: rctl_modified_by
+    data_type: string
+  - name: rctl_modified_dttm
+    data_type: datetime
+  - name: seg_desc
+    data_type: string
+  - name: segment_key
+    data_type: string
+  - name: segment_wid
+    data_type: double
+  - name: sku_desc
+    data_type: string
+  - name: sku_key
+    data_type: string
+  - name: sku_type
+    data_type: string
+  - name: source_extracted_date
+    data_type: date
+  - name: source_extracted_ts
+    data_type: datetime
+  - name: start_date
+    data_type: datetime

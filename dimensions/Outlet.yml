@@ -1,0 +1,113 @@
+unique_name: Outlet
+object_type: dimension
+label: Outlet
+type: standard
+
+hierarchies:
+
+  - unique_name: Outlet Hierarchy
+    label: Outlet Hierarchy
+
+    levels:
+
+      - unique_name: Customer
+        is_hidden: true
+
+      - unique_name: Outlet Level
+
+      - unique_name: ProductSegKey
+
+      - unique_name: Lvl9 Key WID
+
+level_attributes:
+
+  - unique_name: Customer
+    label: Customer
+    dataset: atscale_hrlw_customer_division_scd_current
+    key_columns:
+      - outlet
+    name_column: outlet
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Lvl9 Key WID
+    label: Lvl9 Key WID
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl9_key_wid
+    name_column: lvl9_key_wid
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Outlet Level
+    label: Outlet Level
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl4_key
+    name_column: lvl4_key
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: ProductSegKey
+    label: ProductSegKey
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - segment_wid
+    name_column: segment_wid
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+relationships:
+
+  - from:
+      dataset: atscale_hrlm_outlet_terriroty_dh
+      join_columns:
+        - lvl4_key
+    to:
+      level: Customer
+    type: snowflake
+
+  - unique_name: Outlet_OutletHierarchy
+    from:
+      hierarchy: Outlet Hierarchy
+      level: Lvl9 Key WID
+      dataset: atscale_hrlm_outlet_terriroty_dh
+      join_columns:
+        - key_wid
+        - lvl9_key_wid
+    to:
+      dimension: Outlet Hierarchy
+      level: Territory
+    type: embedded
+
+  - from:
+      dataset: atscale_hrlm_outlet_terriroty_dh
+      join_columns:
+        - lvl9_key_wid
+    to:
+      level: ProductSegKey
+    type: snowflake
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,295 @@
+unique_name: atscale_hrlw_customer_division_scd_current
+object_type: dataset
+label: atscale_hrlw_customer_division_scd_current
+connection_id: Postgres14
+table: atscale_hrlw_customer_division_scd_current
+
+columns:
+  - name: active_flg
+    data_type: string
+  - name: billto_duns
+    data_type: string
+  - name: bracket_customer_key
+    data_type: string
+  - name: bracket_customer_name
+    data_type: string
+  - name: bracket_customer_price_list
+    data_type: string
+  - name: classify_type_key
+    data_type: string
+  - name: created_date
+    data_type: datetime
+  - name: credit_limit
+    data_type: double
+  - name: credit_transit_days
+    data_type: double
+  - name: current_ver
+    data_type: double
+  - name: customer_division_id
+    data_type: double
+  - name: customer_division_key
+    data_type: string
+  - name: customer_division_name
+    data_type: string
+  - name: customer_service_rep
+    data_type: string
+  - name: customer_service_rep_mgr
+    data_type: string
+  - name: customer_type_key
+    data_type: string
+  - name: default_route
+    data_type: string
+  - name: default_section
+    data_type: string
+  - name: default_ship_loc
+    data_type: string
+  - name: default_ship_org
+    data_type: string
+  - name: default_ship_org_source_id
+    data_type: string
+  - name: delivery_location_delivery_name
+    data_type: string
+  - name: delivery_location_key
+    data_type: string
+  - name: delivery_location_name
+    data_type: string
+  - name: duns
+    data_type: string
+  - name: duns_division_desc
+    data_type: string
+  - name: duns_division_id
+    data_type: double
+  - name: duns_division_key
+    data_type: string
+  - name: edi_customer
+    data_type: string
+  - name: edi_inv
+    data_type: string
+  - name: edi_invoice
+    data_type: string
+  - name: eff_dt
+    data_type: datetime
+  - name: eff_end_dt
+    data_type: datetime
+  - name: freight_type_key
+    data_type: string
+  - name: gl_string
+    data_type: string
+  - name: gln
+    data_type: string
+  - name: hash_key
+    data_type: string
+  - name: inactive_date
+    data_type: datetime
+  - name: ingest_date
+    data_type: date
+  - name: integration_id
+    data_type: string
+  - name: invoice_customer_name
+    data_type: string
+  - name: invoice_dist_type_key
+    data_type: string
+  - name: invoicedest
+    data_type: string
+  - name: invoiceshortagedest
+    data_type: string
+  - name: key_type_cd
+    data_type: string
+  - name: key_wid
+    data_type: double
+  - name: leaker_allowance
+    data_type: string
+  - name: legacy_customer_national_name
+    data_type: string
+  - name: legacy_customer_national_number
+    data_type: string
+  - name: legacy_customer_shipto_key
+    data_type: string
+  - name: legacy_customer_soldto_name
+    data_type: string
+  - name: legacy_customer_soldto_number
+    data_type: double
+  - name: legacy_customer_ultimate_name
+    data_type: string
+  - name: legacy_customer_ultimate_number
+    data_type: string
+  - name: load_day
+    data_type: int
+  - name: load_month
+    data_type: int
+  - name: load_year
+    data_type: int
+  - name: mask_partner_key
+    data_type: string
+  - name: memo_line
+    data_type: string
+  - name: mnemonic
+    data_type: string
+  - name: net_customer_inv
+    data_type: string
+  - name: oracle_billto_address_line1
+    data_type: string
+  - name: oracle_billto_address_line2
+    data_type: string
+  - name: oracle_billto_address_line3
+    data_type: string
+  - name: oracle_billto_address_line4
+    data_type: string
+  - name: oracle_billto_city
+    data_type: string
+  - name: oracle_billto_country
+    data_type: string
+  - name: oracle_billto_county
+    data_type: string
+  - name: oracle_billto_name
+    data_type: string
+  - name: oracle_billto_number
+    data_type: string
+  - name: oracle_billto_postalcode
+    data_type: string
+  - name: oracle_billto_province
+    data_type: string
+  - name: oracle_billto_state
+    data_type: string
+  - name: oracle_customer_account_address_line1
+    data_type: string
+  - name: oracle_customer_account_address_line2
+    data_type: string
+  - name: oracle_customer_account_address_line3
+    data_type: string
+  - name: oracle_customer_account_address_line4
+    data_type: string
+  - name: oracle_customer_account_city
+    data_type: string
+  - name: oracle_customer_account_country
+    data_type: string
+  - name: oracle_customer_account_credit_checking
+    data_type: string
+  - name: oracle_customer_account_credit_hold
+    data_type: string
+  - name: oracle_customer_account_credit_tolerance
+    data_type: double
+  - name: oracle_customer_account_name
+    data_type: string
+  - name: oracle_customer_account_number
+    data_type: string
+  - name: oracle_customer_account_postalcode
+    data_type: string
+  - name: oracle_customer_account_province
+    data_type: string
+  - name: oracle_customer_account_state
+    data_type: string
+  - name: oracle_customer_org_address_line1
+    data_type: string
+  - name: oracle_customer_org_address_line2
+    data_type: string
+  - name: oracle_customer_org_address_line3
+    data_type: string
+  - name: oracle_customer_org_address_line4
+    data_type: string
+  - name: oracle_customer_org_city
+    data_type: string
+  - name: oracle_customer_org_country
+    data_type: string
+  - name: oracle_customer_org_county
+    data_type: string
+  - name: oracle_customer_org_postal_code
+    data_type: string
+  - name: oracle_customer_org_province
+    data_type: string
+  - name: oracle_customer_org_state
+    data_type: string
+  - name: oracle_customer_organization_name
+    data_type: string
+  - name: oracle_customer_organization_number
+    data_type: string
+  - name: oracle_deliverto_addr1
+    data_type: string
+  - name: oracle_deliverto_addr2
+    data_type: string
+  - name: oracle_deliverto_addr3
+    data_type: string
+  - name: oracle_deliverto_addr4
+    data_type: string
+  - name: oracle_deliverto_city
+    data_type: string
+  - name: oracle_deliverto_country
+    data_type: string
+  - name: oracle_deliverto_county
+    data_type: string
+  - name: oracle_deliverto_duns
+    data_type: string
+  - name: oracle_deliverto_id
+    data_type: double
+  - name: oracle_deliverto_name
+    data_type: string
+  - name: oracle_deliverto_number
+    data_type: string
+  - name: oracle_deliverto_province
+    data_type: string
+  - name: oracle_deliverto_state
+    data_type: string
+  - name: oracle_deliverto_zip
+    data_type: string
+  - name: orderpromisedest
+    data_type: string
+  - name: outlet
+    data_type: string
+  - name: outlet_territory_wid
+    data_type: double
+  - name: partner_key
+    data_type: string
+  - name: podetaildest
+    data_type: string
+  - name: poreceiptdest
+    data_type: string
+  - name: price_bracket
+    data_type: string
+  - name: pricelist
+    data_type: string
+  - name: prop12
+    data_type: string
+  - name: rctl_created_by
+    data_type: string
+  - name: rctl_created_dttm
+    data_type: datetime
+  - name: rctl_file_path
+    data_type: string
+  - name: rctl_modified_by
+    data_type: string
+  - name: rctl_modified_dttm
+    data_type: datetime
+  - name: row_wid
+    data_type: double
+  - name: sbl_planto_key
+    data_type: string
+  - name: sbl_planto_name
+    data_type: string
+  - name: shippable
+    data_type: string
+  - name: shippable_type_key
+    data_type: string
+  - name: source
+    data_type: string
+  - name: source_extracted_date
+    data_type: date
+  - name: source_extracted_ts
+    data_type: datetime
+  - name: source_id
+    data_type: string
+  - name: terms
+    data_type: string
+  - name: unipro_member_branch_number
+    data_type: string
+  - name: unipro_member_duns_number
+    data_type: string
+  - name: unipro_member_fsa_name
+    data_type: string
+  - name: unipro_member_name
+    data_type: string
+  - name: unipro_member_number
+    data_type: string
+  - name: vendor_key
+    data_type: string
+  - name: will_call
+    data_type: string

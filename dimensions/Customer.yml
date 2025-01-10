@@ -1,0 +1,72 @@
+unique_name: Customer
+object_type: dimension
+label: Customer
+type: standard
+
+hierarchies:
+
+  - unique_name: Customer Hierarchy
+    label: Customer Hierarchy
+
+    levels:
+
+      - unique_name: Oracle Customer Organizationanization Name
+
+      - unique_name: Oracle Customer Account Name
+
+      - unique_name: Customer Level
+
+level_attributes:
+
+  - unique_name: Customer Level
+    label: Customer Division
+    dataset: atscale_hrlw_customer_division_scd_current
+    key_columns:
+      - key_wid
+    name_column: customer_division_name
+
+  - unique_name: Oracle Customer Account Name
+    label: Oracle Customer Account Name
+    dataset: atscale_hrlw_customer_division_scd_current
+    key_columns:
+      - oracle_customer_account_number
+    name_column: oracle_customer_account_name
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Oracle Customer Organizationanization Name
+    label: Oracle Customer Organizationanization Name
+    dataset: atscale_hrlw_customer_division_scd_current
+    key_columns:
+      - oracle_customer_organization_number
+    name_column: oracle_customer_organization_name
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+relationships:
+
+  - unique_name: Customer_Outlet
+    from:
+      hierarchy: Customer Hierarchy
+      level: Customer Level
+      dataset: atscale_hrlw_customer_division_scd_current
+      join_columns:
+        - outlet
+    to:
+      dimension: Outlet
+      level: Outlet Level
+    type: embedded
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

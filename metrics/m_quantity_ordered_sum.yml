@@ -1,0 +1,6 @@
+unique_name: m_quantity_ordered_sum
+object_type: metric
+label: Quantity Ordered
+calculation_method: sum
+dataset: atscale_hrlw_invoice_ln_f
+column: quantity_ordered

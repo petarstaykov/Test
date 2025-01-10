@@ -1,0 +1,99 @@
+unique_name: atscale_hmrm_day_d
+object_type: dataset
+label: atscale_hmrm_day_d
+connection_id: Postgres14
+table: atscale_hmrm_day_d
+
+columns:
+  - name: calendar_date
+    data_type: datetime
+  - name: clndr_month
+    data_type: double
+  - name: clndr_month_name
+    data_type: string
+  - name: clndr_monthyr
+    data_type: string
+  - name: clndr_qtr
+    data_type: double
+  - name: clndr_week
+    data_type: double
+  - name: clndr_year
+    data_type: double
+  - name: clndr_yearmonth
+    data_type: double
+  - name: clndr_yearqtr
+    data_type: double
+  - name: clndr_yearweek
+    data_type: double
+  - name: day_count
+    data_type: double
+  - name: day_name
+    data_type: string
+  - name: day_wid
+    data_type: double
+  - name: fscl_half
+    data_type: double
+  - name: fscl_per
+    data_type: double
+  - name: fscl_qtr
+    data_type: double
+  - name: fscl_week
+    data_type: double
+  - name: fscl_year
+    data_type: double
+  - name: fscl_yearhalf
+    data_type: double
+  - name: fscl_yearhalf_alpha
+    data_type: string
+  - name: fscl_yearhalf_name
+    data_type: string
+  - name: fscl_yearper
+    data_type: double
+  - name: fscl_yearper_alpha
+    data_type: string
+  - name: fscl_yearper_day_count
+    data_type: double
+  - name: fscl_yearper_end_date
+    data_type: datetime
+  - name: fscl_yearper_name
+    data_type: string
+  - name: fscl_yearper_start_date
+    data_type: datetime
+  - name: fscl_yearqtr
+    data_type: double
+  - name: fscl_yearqtr_alpha
+    data_type: string
+  - name: fscl_yearqtr_name
+    data_type: string
+  - name: fscl_yearweek
+    data_type: double
+  - name: fscl_yearweek_name
+    data_type: string
+  - name: ingest_date
+    data_type: date
+  - name: k12_school_year
+    data_type: string
+  - name: load_day
+    data_type: int
+  - name: load_month
+    data_type: int
+  - name: load_year
+    data_type: int
+  - name: nextyr_calendar_date
+    data_type: datetime
+  - name: nextyr_day_wid
+    data_type: double
+  - name: rctl_created_by
+    data_type: string
+  - name: rctl_created_dttm
+    data_type: datetime
+  - name: rctl_file_path
+    data_type: string
+  - name: rctl_modified_by
+    data_type: string
+  - name: rctl_modified_dttm
+    data_type: datetime
+  - name: source_extracted_date
+    data_type: date
+  - name: source_extracted_ts
+    data_type: datetime

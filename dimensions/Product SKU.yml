@@ -1,0 +1,168 @@
+unique_name: Product SKU
+object_type: dimension
+label: Product SKU
+type: standard
+
+hierarchies:
+
+  - unique_name: Product SKU Hierarchy
+    label: Product SKU Hierarchy
+
+    levels:
+
+      - unique_name: Product Segment
+
+      - unique_name: Pillar
+
+      - unique_name: Sub-Pillar
+
+      - unique_name: Family
+
+      - unique_name: Brand Format
+
+      - unique_name: Mix Group
+
+      - unique_name: Product Group
+
+      - unique_name: Segment Product
+
+      - unique_name: Product SKU Level
+
+level_attributes:
+
+  - unique_name: Brand Format
+    label: Brand Format
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - lvl_6_key
+    name_column: lvl_6_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Family
+    label: Family
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - lvl_5_key
+    name_column: lvl_5_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Mix Group
+    label: Mix Group
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - lvl_7_key
+    name_column: lvl_7_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Pillar
+    label: Pillar
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - lvl_3_key
+    name_column: lvl_3_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Product Group
+    label: Product Group
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - lvl_8_key
+    name_column: lvl_8_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Product Segment
+    label: Product Segment
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - segment_wid
+    name_column: seg_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Product SKU Level
+    label: Product SKU Level
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - hrlw_key_wid
+    name_column: hrlw_key_wid
+
+  - unique_name: Segment Product
+    label: Segment Product
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - hrlw_key_wid
+    name_column: sku_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Sub-Pillar
+    label: Sub-Pillar
+    dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+    key_columns:
+      - lvl_4_key
+    name_column: lvl_4_desc
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+relationships:
+
+  - unique_name: ProductSKU_Outlet
+    from:
+      hierarchy: Product SKU Hierarchy
+      level: Product SKU Level
+      dataset: atscale_hrlm_segment_product_sku_ver_dh_current
+      join_columns:
+        - segment_wid
+    to:
+      dimension: Outlet
+      level: Lvl9 Key WID
+    type: embedded
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

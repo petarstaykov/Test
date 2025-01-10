@@ -1,0 +1,123 @@
+unique_name: atscale_hrlm_outlet_terriroty_dh
+object_type: dataset
+label: atscale_hrlm_outlet_terriroty_dh
+connection_id: Postgres14
+table: atscale_hrlm_outlet_terriroty_dh
+
+columns:
+  - name: acct_cmpny_desc
+    data_type: string
+  - name: acct_cmpny_nbr
+    data_type: string
+  - name: acct_div_desc
+    data_type: string
+  - name: acct_div_nbr
+    data_type: string
+  - name: admin_loc
+    data_type: string
+  - name: attr3
+    data_type: string
+  - name: child_key
+    data_type: string
+  - name: child_name
+    data_type: string
+  - name: child_type
+    data_type: string
+  - name: division_id
+    data_type: double
+  - name: division_wid
+    data_type: double
+  - name: entity
+    data_type: string
+  - name: fr_division
+    data_type: string
+  - name: fr_segment
+    data_type: string
+  - name: gl_string
+    data_type: string
+  - name: gl_string_fusion
+    data_type: string
+  - name: gl_wid_fusion
+    data_type: double
+  - name: inactive_date
+    data_type: datetime
+  - name: ingest_date
+    data_type: date
+  - name: key_type_cd
+    data_type: string
+  - name: key_wid
+    data_type: double
+  - name: load_day
+    data_type: int
+  - name: load_month
+    data_type: int
+  - name: load_year
+    data_type: int
+  - name: lvl
+    data_type: double
+  - name: lvl10_key
+    data_type: string
+  - name: lvl10_key_wid
+    data_type: double
+  - name: lvl10_name
+    data_type: string
+  - name: lvl4_key
+    data_type: string
+  - name: lvl4_key_wid
+    data_type: double
+  - name: lvl4_name
+    data_type: string
+  - name: lvl5_key
+    data_type: string
+  - name: lvl5_key_wid
+    data_type: double
+  - name: lvl5_name
+    data_type: string
+  - name: lvl6_key
+    data_type: string
+  - name: lvl6_key_wid
+    data_type: double
+  - name: lvl6_name
+    data_type: string
+  - name: lvl7_key
+    data_type: string
+  - name: lvl7_key_wid
+    data_type: double
+  - name: lvl7_name
+    data_type: string
+  - name: lvl8_key
+    data_type: string
+  - name: lvl8_key_wid
+    data_type: double
+  - name: lvl8_name
+    data_type: string
+  - name: lvl9_key
+    data_type: string
+  - name: lvl9_key_wid
+    data_type: double
+  - name: lvl9_name
+    data_type: string
+  - name: old_gl
+    data_type: string
+  - name: parent_key
+    data_type: string
+  - name: rctl_created_by
+    data_type: string
+  - name: rctl_created_dttm
+    data_type: datetime
+  - name: rctl_file_path
+    data_type: string
+  - name: rctl_modified_by
+    data_type: string
+  - name: rctl_modified_dttm
+    data_type: datetime
+  - name: segment
+    data_type: string
+  - name: segment_id
+    data_type: double
+  - name: source_extracted_date
+    data_type: date
+  - name: source_extracted_ts
+    data_type: datetime
+  - name: ver_wid_current
+    data_type: double

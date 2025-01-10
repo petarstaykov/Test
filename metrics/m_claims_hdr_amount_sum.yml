@@ -1,0 +1,6 @@
+unique_name: m_claims_hdr_amount_sum
+object_type: metric
+label: Claims Header Amount
+calculation_method: sum
+dataset: atscale_hrlw_invoice_ln_f
+column: claims_hdr_amount

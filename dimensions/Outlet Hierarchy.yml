@@ -1,0 +1,143 @@
+unique_name: Outlet Hierarchy
+object_type: dimension
+label: Outlet Hierarchy
+type: standard
+
+hierarchies:
+
+  - unique_name: Outlet Hierarchy Hierarchy
+    label: Outlet Hierarchy Hierarchy
+
+    levels:
+
+      - unique_name: Total Company
+
+      - unique_name: Outlet Segment
+
+      - unique_name: Entity
+
+      - unique_name: Division
+
+      - unique_name: Region
+
+      - unique_name: District
+
+      - unique_name: Territory
+
+level_attributes:
+
+  - unique_name: District
+    label: District
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl5_key
+    name_column: lvl5_name
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Division
+    label: Division
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl7_name
+    name_column: lvl7_key
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Entity
+    label: Entity
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl8_key
+    name_column: lvl8_name
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Outlet Segment
+    label: Outlet Segment
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl9_key_wid
+    name_column: lvl9_name
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Region
+    label: Region
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl6_key
+    name_column: lvl6_name
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Territory
+    label: Territory
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - key_wid
+      - lvl9_key_wid
+    name_column: lvl4_key
+
+  - unique_name: Total Company
+    label: Total Company
+    dataset: atscale_hrlm_outlet_terriroty_dh
+    key_columns:
+      - lvl10_key
+    name_column: lvl10_name
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+relationships:
+
+  - from:
+      dataset: atscale_hrlm_outlet_terriroty_dh
+      join_columns:
+        - lvl4_key
+    to:
+      dimension: Outlet
+      level: Customer
+    type: embedded
+
+  - from:
+      dataset: atscale_hrlm_outlet_terriroty_dh
+      join_columns:
+        - lvl9_key_wid
+    to:
+      dimension: Outlet
+      level: ProductSegKey
+    type: embedded
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -1,0 +1,47 @@
+unique_name: hormel
+object_type: model
+label: hormel
+include_default_drillthrough: true
+
+relationships:
+
+  - unique_name: atscale_hrlw_invoice_ln_f_Customer
+    from:
+      dataset: atscale_hrlw_invoice_ln_f
+      join_columns:
+        - customer_division_wid
+    to:
+      dimension: Customer
+      level: Customer Level
+
+  - unique_name: atscale_hrlw_invoice_ln_f_Calendar
+    from:
+      dataset: atscale_hrlw_invoice_ln_f
+      join_columns:
+        - transaction_date
+    to:
+      dimension: Calendar
+      level: Calendar Level
+
+  - unique_name: atscale_hrlw_invoice_ln_f_Product_SKU
+    from:
+      dataset: atscale_hrlw_invoice_ln_f
+      join_columns:
+        - refer_to_product_wid
+    to:
+      dimension: Product SKU
+      level: Product SKU Level
+
+metrics:
+
+  - unique_name: m_cash_discount_amount_sum
+
+  - unique_name: m_claims_hdr_amount_sum
+
+  - unique_name: m_net_sales_amount_sum
+
+  - unique_name: m_quantity_invoiced_sum
+
+  - unique_name: m_quantity_ordered_sum
+
+  - unique_name: m_sales_amount_sum

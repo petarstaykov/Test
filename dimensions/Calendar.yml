@@ -1,0 +1,93 @@
+unique_name: Calendar
+object_type: dimension
+label: Calendar
+type: time
+
+hierarchies:
+
+  - unique_name: Calendar Hierarchy
+    label: Calendar Hierarchy
+
+    levels:
+
+      - unique_name: Fiscal Year
+
+      - unique_name: Fiscal Quarter
+
+      - unique_name: Fiscal Period
+
+      - unique_name: Calendar Level
+
+level_attributes:
+
+  - unique_name: Calendar Level
+    label: Calendar Level
+    dataset: atscale_hmrm_day_d
+    key_columns:
+      - calendar_date
+    name_column: calendar_date
+    allowed_calcs_for_dma:
+      - Ancestor
+      - DatesPeriodsToDate
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+    time_unit: day
+
+  - unique_name: Fiscal Period
+    label: Fiscal Period
+    dataset: atscale_hmrm_day_d
+    key_columns:
+      - fscl_yearper
+    name_column: fscl_yearper
+    allowed_calcs_for_dma:
+      - Ancestor
+      - DatesPeriodsToDate
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+    time_unit: month
+
+  - unique_name: Fiscal Quarter
+    label: Fiscal Quarter
+    dataset: atscale_hmrm_day_d
+    key_columns:
+      - fscl_yearqtr
+    name_column: fscl_yearqtr
+    allowed_calcs_for_dma:
+      - Ancestor
+      - DatesPeriodsToDate
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+    time_unit: quarter
+
+  - unique_name: Fiscal Year
+    label: Fiscal Year
+    dataset: atscale_hmrm_day_d
+    key_columns:
+      - fscl_year
+    name_column: fscl_year
+    allowed_calcs_for_dma:
+      - Ancestor
+      - DatesPeriodsToDate
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+    time_unit: year
+
+modeler_metadata:
+  version: "0"
+  modified: "false"
